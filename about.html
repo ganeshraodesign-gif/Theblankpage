@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | THE BLANK</title>
+    <meta name="description" content="Learn about The Blank Studio - a premium creative agency with 4+ years of experience in branding, photography, and visual production.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&family=DM+Sans:wght@400;500&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Grid Guidelines -->
+    <div class="grid-guidelines">
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
+
+    <nav class="navbar scrolled">
+        <a href="index.html" class="nav-logo">THE BLANK</a>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="visual.html">Visual</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="currency-toggle">
+                <button class="active" data-currency="inr">₹</button>
+                <button data-currency="usd">$</button>
+            </div>
+            <button class="theme-btn" onclick="toggleTheme()">◐</button>
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" onclick="toggleMenu()">Home</a>
+        <a href="services.html" onclick="toggleMenu()">Services</a>
+        <a href="pricing.html" onclick="toggleMenu()">Pricing</a>
+        <a href="visual.html" onclick="toggleMenu()">Visual</a>
+        <a href="about.html" onclick="toggleMenu()">About</a>
+        <a href="contact.html" onclick="toggleMenu()">Contact</a>
+    </div>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <img src="websiteimage/about.jpg" alt="About Hero">
+    </section>
+
+    <p class="section-tagline" style="margin: 32px auto; max-width: 600px;">Our process begins with exploring visual directions and translating them into unique brand identities.</p>
+
+    <!-- Story Section -->
+    <section class="section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-story fade-in">
+                    <p class="accent-text">About Us</p>
+                    <h2>The Blank Studio</h2>
+                    <p>THE BLANK is a multidisciplinary creative studio focused on building brands from the ground up. We work across branding, design, and visual production — creating work that is minimal, intentional, and built to last.</p>
+                    <p>With over 4 years of experience, we've collaborated with a wide range of clients, helping transform ideas into clear and compelling visual identities. From logo systems to full brand direction, from product photography to fashion shoots — every detail is crafted with purpose.</p>
+                    <p>Our process begins with understanding — your vision, your audience, and your direction. From there, we shape visual systems that not only look refined but also communicate effectively.</p>
+                    <p>We don't believe in templates or shortcuts. Every project is approached as a blank space — explored, defined, and built into something original.</p>
+                    <p>At THE BLANK, the focus is simple: clarity, consistency, and impact.</p>
+                    
+                    <blockquote class="pull-quote">
+                        "Design is not just what it looks like. Design is how it works — and how it makes you feel."
+                    </blockquote>
+                </div>
+                <div class="stats-grid fade-in">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="4">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="100">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="500">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section" style="background: var(--gray-light);">
+        <div class="container">
+            <h2 class="fade-in" style="margin-bottom: 64px;">Our Process</h2>
+            <div class="services-grid">
+                <div class="fade-in">
+                    <div class="service-card">
+                        <h3>01. Discovery</h3>
+                        <p>We start by understanding your brand, your goals, and your vision. This helps us create a tailored approach for your project.</p>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <div class="service-card">
+                        <h3>02. Concept</h3>
+                        <p>We develop multiple concepts and present them with detailed explanations. You choose the direction that resonates.</p>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <div class="service-card">
+                        <h3>03. Refinement</h3>
+                        <p>Based on your feedback, we refine the chosen concept until it perfectly matches your vision.</p>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <div class="service-card">
+                        <h3>04. Delivery</h3>
+                        <p>We deliver all final files in multiple formats, along with brand guidelines where applicable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">THE BLANK</div>
+        <p class="footer-copy">&copy; <span class="year">2026</span> The Blank Studio. All rights reserved.</p>
+    </footer>
+
+    
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            document.querySelector('.hamburger').classList.toggle('active');
+            document.querySelector('.mobile-menu').classList.toggle('active');
+        }
+
+        // Dark Mode Toggle
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        }
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Update year
+        document.querySelectorAll('.year').forEach(function(el) {
+            el.textContent = new Date().getFullYear();
+        });
+
+        // Custom Cursor
+        const cursor = document.querySelector('.custom-cursor');
+        document.addEventListener('mousemove', function(e) {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Currency Toggle
+        const currencyBtns = document.querySelectorAll('.currency-toggle button');
+        currencyBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                currencyBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                localStorage.setItem('currency', btn.dataset.currency);
+            });
+        });
+
+        const savedCurrency = localStorage.getItem('currency') || 'inr';
+        currencyBtns.forEach(btn => {
+            if (btn.dataset.currency === savedCurrency) btn.classList.add('active');
+            else btn.classList.remove('active');
+        });
+
+        // Stats Counter Animation
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    statNumbers.forEach(stat => {
+                        const target = parseInt(stat.dataset.count);
+                        const duration = 2000;
+                        const step = target / (duration / 16);
+                        let current = 0;
+                        
+                        const counter = setInterval(() => {
+                            current += step;
+                            if (current >= target) {
+                                stat.textContent = target + '+';
+                                clearInterval(counter);
+                            } else {
+                                stat.textContent = Math.floor(current) + '+';
+                            }
+                        }, 16);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        // Fade In Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        document.querySelectorAll('.stats-grid').forEach(el => statsObserver.observe(el));
+    </script>
+</body>
+</html>

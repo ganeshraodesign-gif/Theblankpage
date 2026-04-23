@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | THE BLANK</title>
+    <meta name="description" content="Transparent pricing for all creative services - branding, photography, social media, and web design.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&family=DM+Sans:wght@400;500&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Grid Guidelines -->
+    <div class="grid-guidelines">
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
+
+    <nav class="navbar scrolled">
+        <a href="index.html" class="nav-logo">THE BLANK</a>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="visual.html">Visual</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="currency-toggle">
+                <button class="active" data-currency="inr">₹</button>
+                <button data-currency="usd">$</button>
+            </div>
+            <button class="theme-btn" onclick="toggleTheme()">◐</button>
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" onclick="toggleMenu()">Home</a>
+        <a href="services.html" onclick="toggleMenu()">Services</a>
+        <a href="pricing.html" onclick="toggleMenu()">Pricing</a>
+        <a href="visual.html" onclick="toggleMenu()">Visual</a>
+        <a href="about.html" onclick="toggleMenu()">About</a>
+        <a href="contact.html" onclick="toggleMenu()">Contact</a>
+    </div>
+
+    <section class="section" style="padding-top: 200px;">
+        <div class="container">
+            <div class="pricing-header fade-in">
+                <p class="accent-text">Pricing</p>
+                <h1 class="section-title">Simple & Transparent</h1>
+                <p class="section-subtitle" style="margin: 0 auto;">Choose the perfect package for your brand needs. All prices include source files.</p>
+                
+                <div class="pricing-toggle">
+                    <button class="active" data-currency="inr">₹ INR</button>
+                    <button data-currency="usd">$ USD</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. BRANDING & DESIGN -->
+    <section class="section">
+        <div class="container">
+            <h2 class="fade-in" style="margin-bottom: 16px;">1. Branding & Design</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <h3>Logo Design</h3>
+                    <p>Custom logo design from concept to final vector. Unique, memorable, and timeless.</p>
+                    <ul class="service-list">
+                        <li><span>Starter</span><span data-price="5000">₹5,000</span></li>
+                        <li><span>Standard</span><span data-price="10000">₹10,000</span></li>
+                        <li><span>Premium</span><span data-price="20000">₹20,000</span></li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>Brand Identity</h3>
+                    <p>Complete brand identity system including color palette, typography, and brand guidelines.</p>
+                    <ul class="service-list">
+                        <li><span>Basic</span><span data-price="15000">₹15,000</span></li>
+                        <li><span>Complete</span><span data-price="25000">₹25,000</span></li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>Packaging Design</h3>
+                    <p>Eye-catching packaging that stands out on shelves.</p>
+                    <ul class="service-list">
+                        <li><span>Basic Box</span><span data-price="8000">₹8,000</span></li>
+                        <li><span>Premium</span><span data-price="15000">₹15,000</span></li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>Visiting Card Design</h3>
+                    <p>Premium business card design that makes a lasting impression.</p>
+                    <ul class="service-list">
+                        <li><span>Single Side</span><span data-price="1500">₹1,500</span></li>
+                        <li><span>Double Side</span><span data-price="2500">₹2,500</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. PHOTOGRAPHY -->
+    <section class="section" style="background: var(--gray-light);">
+        <div class="container">
+            <h2 class="fade-in" style="margin-bottom: 16px;">2. Photography</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <h3>Product Photography</h3>
+                    <p>High-quality product images for e-commerce and catalogs.</p>
+                    <ul class="service-list">
+                        <li><span>5 Products</span><span data-price="3000">₹3,000</span></li>
+                        <li><span>10 Products</span><span data-price="5000">₹5,000</span></li>
+                        <li><span>20 Products</span><span data-price="8000">₹8,000</span></li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>E-commerce Shoot</h3>
+                    <p>Complete e-commerce product photography with white background and variants.</p>
+                    <ul class="service-list">
+                        <li><span>Starter (10 products)</span><span data-price="5000">₹5,000</span></li>
+                        <li><span>Standard (25 products)</span><span data-price="10000">₹10,000</span></li>
+                        <li><span>Premium (50 products)</span><span data-price="18000">₹18,000</span></li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>Fashion Photography</h3>
+                    <p>Professional fashion photography for brands and publications.</p>
+                    <ul class="service-list">
+                        <li><span>Indoor/Outdoor</span><span data-price="7000">₹7,000</span></li>
+                        <li><span>Standard</span><span data-price="12000">₹12,000</span></li>
+                        <li><span>Premium</span><span data-price="20000">₹20,000</span></li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>Photo Retouching</h3>
+                    <p>Professional image editing and retouching services.</p>
+                    <ul class="service-list">
+                        <li><span>Per Image</span><span data-price="300">₹300</span></li>
+                        <li><span>Bulk (10+ images)</span><span data-price="2500">₹2,500</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SOCIAL MEDIA & CONTENT -->
+    <section class="section">
+        <div class="container">
+            <h2 class="fade-in" style="margin-bottom: 16px;">3. Social Media & Content</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <h3>Social Media Post</h3>
+                    <p>Eye-catching social media posts for Instagram, Facebook, and more.</p>
+                    <ul class="service-list">
+                        <li><span>Per Post</span><span data-price="500">₹500</span></li>
+                        <li><span>5 Posts</span><span data-price="2000">₹2,000</span></li>
+                        <li><span>10 Posts</span><span data-price="3500">₹3,500</span></li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>Carousel Post</h3>
+                    <p>Engaging carousel posts for storytelling and product showcases.</p>
+                    <ul class="service-list">
+                        <li><span>Per Carousel (5-10 slides)</span><span data-price="1000">₹1,000</span></li>
+                        <li><span>3 Carousels</span><span data-price="2500">₹2,500</span></li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>Reels / Video Editing</h3>
+                    <p>Short-form video content and professional editing.</p>
+                    <ul class="service-list">
+                        <li><span>Per Reel (15-60 sec)</span><span data-price="1200">₹1,200</span></li>
+                        <li><span>Short Video</span><span data-price="800">₹800</span></li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>Monthly Content Package</h3>
+                    <p>Complete social media management with regular posts.</p>
+                    <ul class="service-list">
+                        <li><span>Basic (8 posts)</span><span data-price="8000">₹8,000</span></li>
+                        <li><span>Standard (15 posts)</span><span data-price="12000">₹12,000</span></li>
+                        <li><span>Premium (30 posts)</span><span data-price="20000">₹20,000</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. UI/UX & WEBSITE -->
+    <section class="section" style="background: var(--gray-light);">
+        <div class="container">
+            <h2 class="fade-in" style="margin-bottom: 16px;">4. UI/UX & Website</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <h3>Landing Page Design</h3>
+                    <p>Convert visitors into customers with high-converting landing pages.</p>
+                    <ul class="service-list">
+                        <li><span>Single Page</span><span data-price="10000">₹10,000</span></li>
+                        <li><span>Multi-section</span><span data-price="15000">₹15,000</span></li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>Website UI Design</h3>
+                    <p>Complete website design with modern UI/UX principles.</p>
+                    <ul class="service-list">
+                        <li><span>5 Pages</span><span data-price="18000">₹18,000</span></li>
+                        <li><span>10 Pages</span><span data-price="25000">₹25,000</span></li>
+                        <li><span>Custom</span><span data-price="35000">₹35,000</span></li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>Mobile App UI</h3>
+                    <p>User-friendly mobile app interface design.</p>
+                    <ul class="service-list">
+                        <li><span>iOS OR Android</span><span data-price="15000">₹15,000</span></li>
+                        <li><span>Both Platforms</span><span data-price="25000">₹25,000</span></li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>Website Development</h3>
+                    <p>Full website development with responsive design.</p>
+                    <ul class="service-list">
+                        <li><span>5 Pages</span><span data-price="25000">₹25,000</span></li>
+                        <li><span>E-commerce</span><span data-price="35000">₹35,000</span></li>
+                        <li><span>Custom Web App</span><span data-price="50000">₹50,000</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. BRAND GROWTH & STRATEGY -->
+    <section class="section">
+        <div class="container">
+            <h2 class="fade-in" style="margin-bottom: 16px;">5. Brand Growth & Strategy</h2>
+            <p class="fade-in" style="margin-bottom: 48px; max-width: 600px;">We go beyond design. We help brands grow with clear direction, positioning, and creative strategy.</p>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <h3>Brand Consultation</h3>
+                    <p>One-on-one strategy session to define your brand direction.</p>
+                    <ul class="service-list">
+                        <li><span>1 Hour Session</span><span data-price="1500">₹1,500</span></li>
+                        <li><span>Complete Audit</span><span data-price="5000">₹5,000</span></li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>Visual Direction</h3>
+                    <p>Comprehensive visual strategy for your brand aesthetic.</p>
+                    <ul class="service-list">
+                        <li><span>Package</span><span data-price="8000">₹8,000</span></li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>Content Strategy</h3>
+                    <p>Plan your content calendar for maximum engagement.</p>
+                    <ul class="service-list">
+                        <li><span>Monthly Plan</span><span data-price="5000">₹5,000</span></li>
+                    </ul>
+                </div>
+                <div class="service-card featured fade-in">
+                    <h3>Business Growth Ideas</h3>
+                    <p>Custom strategies tailored to your business goals.</p>
+                    <ul class="service-list">
+                        <li><span>Custom Pricing</span><span data-price="0">Contact Us</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">THE BLANK</div>
+        <p class="footer-copy">&copy; <span class="year">2026</span> The Blank Studio. All rights reserved.</p>
+    </footer>
+
+    
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            document.querySelector('.hamburger').classList.toggle('active');
+            document.querySelector('.mobile-menu').classList.toggle('active');
+        }
+
+        // Dark Mode Toggle
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        }
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Update year
+
+        // Update year
+        document.querySelectorAll('.year').forEach(function(el) {
+            el.textContent = new Date().getFullYear();
+        });
+
+        // Custom Cursor
+        const cursor = document.querySelector('.custom-cursor');
+        document.addEventListener('mousemove', function(e) {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Currency Toggle
+        const currencyBtns = document.querySelectorAll('.currency-toggle button, .pricing-toggle button');
+        const exchangeRate = 83;
+
+        function updatePrices() {
+            const currency = localStorage.getItem('currency') || 'inr';
+            document.querySelectorAll('[data-price]').forEach(el => {
+                const inr = parseInt(el.dataset.price);
+                if (inr === 0) return;
+                if (currency === 'usd') {
+                    el.textContent = '$' + Math.round(inr / exchangeRate);
+                } else {
+                    el.textContent = '₹' + inr.toLocaleString();
+                }
+            });
+        }
+
+        document.querySelectorAll('.currency-toggle, .pricing-toggle').forEach(toggle => {
+            toggle.querySelectorAll('button').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    toggle.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const currency = btn.dataset.currency;
+                    localStorage.setItem('currency', currency);
+                    updatePrices();
+                });
+            });
+        });
+
+        const savedCurrency = localStorage.getItem('currency') || 'inr';
+        document.querySelectorAll('.currency-toggle, .pricing-toggle').forEach(toggle => {
+            toggle.querySelectorAll('button').forEach(btn => {
+                if (btn.dataset.currency === savedCurrency) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        });
+        updatePrices();
+
+        // Fade In Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

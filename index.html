@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BLANK | Creative Direction & Visual Production</title>
+    <meta name="description" content="The Blank Studio - Premium creative agency specializing in branding, design, photography, and visual production in Ahmedabad, India.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&family=DM+Sans:wght@400;500&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Grid Guidelines -->
+    <div class="grid-guidelines">
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">THE BLANK</a>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="visual.html">Visual</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="currency-toggle">
+                <button class="active" data-currency="inr">₹</button>
+                <button data-currency="usd">$</button>
+            </div>
+            <button class="theme-btn" onclick="toggleTheme()">◐</button>
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" onclick="toggleMenu()">Home</a>
+        <a href="services.html" onclick="toggleMenu()">Services</a>
+        <a href="pricing.html" onclick="toggleMenu()">Pricing</a>
+        <a href="visual.html" onclick="toggleMenu()">Visual</a>
+        <a href="about.html" onclick="toggleMenu()">About</a>
+        <a href="contact.html" onclick="toggleMenu()">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="hero-number">01</div>
+                
+                <div class="design-line design-line-h" style="position: absolute; top: 140px; left: 80px; width: 80px; background: var(--gold);"></div>
+                <div class="design-line design-line-v" style="position: absolute; top: 140px; left: 80px; height: 200px;"></div>
+                
+                <h1 class="hero-title">THE BLANK</h1>
+                <p class="hero-subtitle">Creative Direction & Visual Production</p>
+                <a href="contact.html" class="hero-cta">inspired by modern brand aesthetics.</a>
+                
+                <div class="scroll-indicator">Scroll to explore</div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-image">
+                    <img src="websiteimage/homepage.jpg" alt="Fashion Model">
+                </div>
+            </div>
+        </div>
+        
+        <div class="mouse-scroll"></div>
+    </section>
+
+    <!-- Featured Services Preview -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="accent-text">What We Do</p>
+                <h2 class="section-title">Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <h3>Branding</h3>
+                    <ul class="service-list">
+                        <li><span>Logo Design</span><span data-price="5000">₹5,000</span></li>
+                        <li><span>Brand Identity</span><span data-price="15000">₹15,000</span></li>
+                        <li><span>Visiting Cards</span><span data-price="1500">₹1,500</span></li>
+                        <li><span>Packaging Design</span><span data-price="8000">₹8,000</span></li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>Photography</h3>
+                    <ul class="service-list">
+                        <li><span>Fashion Shoots</span><span data-price="7000">₹7,000</span></li>
+                        <li><span>Product Photography</span><span data-price="3000">₹3,000</span></li>
+                        <li><span>E-commerce</span><span data-price="5000">₹5,000</span></li>
+                        <li><span>Retouching</span><span data-price="300">₹300</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section class="section" style="background: var(--gray-light);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="accent-text">Our Work</p>
+                <h2 class="section-title">Visual</h2>
+            </div>
+            <div style="padding: 0 40px;">
+                <div class="gallery-grid">
+                    <div class="gallery-item fade-in">
+                        <img src="websiteimage/logo.jpg" alt="Logo Design">
+                    </div>
+                    <div class="gallery-item fade-in">
+                        <img src="websiteimage/branding.jpg" alt="Branding">
+                    </div>
+                    <div class="gallery-item fade-in">
+                        <img src="websiteimage/photography.jpg" alt="Photography">
+                    </div>
+                    <div class="gallery-item fade-in">
+                        <img src="websiteimage/product.jpg" alt="Product">
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 80px;">
+                <a href="visual.html" class="hero-cta">more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="deco-square medium" style="position: absolute; top: 40px; left: 10%; opacity: 0.1;"></div>
+        <div class="deco-circle small" style="position: absolute; bottom: 40px; right: 10%;"></div>
+        <div class="container" style="text-align: center;">
+            <h2 class="fade-in" style="margin-bottom: 48px;">Ready to Create?</h2>
+            <p class="fade-in" style="max-width: 500px; margin: 0 auto 80px; font-size: 18px; font-weight: 300;">Let's work together to bring your vision to life with premium design.</p>
+            <a href="contact.html" class="hero-cta">Get In Touch</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">THE BLANK</div>
+        <p class="footer-copy">&copy; <span class="year">2026</span> The Blank Studio. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            document.querySelector('.hamburger').classList.toggle('active');
+            document.querySelector('.mobile-menu').classList.toggle('active');
+        }
+
+        // Dark Mode Toggle
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        }
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Update year
+        document.querySelectorAll('.year').forEach(el => {
+            el.textContent = new Date().getFullYear();
+        });
+
+        // Custom Cursor
+        const cursor = document.querySelector('.custom-cursor');
+        document.addEventListener('mousemove', function(e) {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Currency Toggle
+        const currencyBtns = document.querySelectorAll('.currency-toggle button');
+        const exchangeRate = 83;
+
+        function updatePrices() {
+            const currency = localStorage.getItem('currency') || 'inr';
+            document.querySelectorAll('[data-price]').forEach(el => {
+                const inr = parseInt(el.dataset.price);
+                if (currency === 'usd') {
+                    el.textContent = '$' + Math.round(inr / exchangeRate);
+                } else {
+                    el.textContent = '₹' + inr.toLocaleString();
+                }
+            });
+        }
+
+        currencyBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                currencyBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                localStorage.setItem('currency', btn.dataset.currency);
+                updatePrices();
+            });
+        });
+
+        const savedCurrency = localStorage.getItem('currency') || 'inr';
+        currencyBtns.forEach(btn => {
+            if (btn.dataset.currency === savedCurrency) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+        updatePrices();
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Fade In Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | THE BLANK</title>
+    <meta name="description" content="Explore our creative services - branding, photography, social media design, and UI/UX design.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&family=DM+Sans:wght@400;500&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Grid Guidelines -->
+    <div class="grid-guidelines">
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
+
+    <nav class="navbar scrolled">
+        <a href="index.html" class="nav-logo">THE BLANK</a>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="visual.html">Visual</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="currency-toggle">
+                <button class="active" data-currency="inr">₹</button>
+                <button data-currency="usd">$</button>
+            </div>
+            <button class="theme-btn" onclick="toggleTheme()">◐</button>
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" onclick="toggleMenu()">Home</a>
+        <a href="services.html" onclick="toggleMenu()">Services</a>
+        <a href="pricing.html" onclick="toggleMenu()">Pricing</a>
+        <a href="visual.html" onclick="toggleMenu()">Visual</a>
+        <a href="about.html" onclick="toggleMenu()">About</a>
+        <a href="contact.html" onclick="toggleMenu()">Contact</a>
+    </div>
+
+    <section class="section" style="padding-top: 200px;">
+        <div class="container" style="text-align: center;">
+            <div class="section-header fade-in">
+                <p class="accent-text">Services</p>
+                <h1 class="section-title">What We Do</h1>
+                <p class="section-subtitle" style="margin: 0 auto;">We transform visual inspiration into original, brand-focused design systems tailored for your business.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <h3>Branding</h3>
+                    <ul class="service-list">
+                        <li><span>Logo Design</span><span data-price="5000">₹5,000</span></li>
+                        <li><span>Brand Identity</span><span data-price="15000">₹15,000</span></li>
+                        <li><span>Brand Guidelines</span><span data-price="12000">₹12,000</span></li>
+                        <li><span>Visiting Cards</span><span data-price="1500">₹1,500</span></li>
+                        <li><span>Letterhead</span><span data-price="1200">₹1,200</span></li>
+                        <li><span>Packaging Design</span><span data-price="8000">₹8,000</span></li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>Photography</h3>
+                    <ul class="service-list">
+                        <li><span>Fashion Shoots</span><span data-price="7000">₹7,000</span></li>
+                        <li><span>Product Photography</span><span data-price="3000">₹3,000</span></li>
+                        <li><span>E-commerce</span><span data-price="5000">₹5,000</span></li>
+                        <li><span>Retouching</span><span data-price="300">₹300</span></li>
+                        <li><span>Editorial</span><span data-price="8000">₹8,000</span></li>
+                        <li><span>Lookbook</span><span data-price="6000">₹6,000</span></li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>Social Media</h3>
+                    <ul class="service-list">
+                        <li><span>Post Design</span><span data-price="500">₹500</span></li>
+                        <li><span>Carousel Design</span><span data-price="800">₹800</span></li>
+                        <li><span>Story Template</span><span data-price="600">₹600</span></li>
+                        <li><span>Highlight Cover</span><span data-price="400">₹400</span></li>
+                        <li><span>Reels Edit</span><span data-price="1500">₹1,500</span></li>
+                        <li><span>Content Plan</span><span data-price="3000">₹3,000</span></li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>Web & UI</h3>
+                    <ul class="service-list">
+                        <li><span>Landing Page</span><span data-price="8000">₹8,000</span></li>
+                        <li><span>Website Design</span><span data-price="15000">₹15,000</span></li>
+                        <li><span>UI/UX Design</span><span data-price="12000">₹12,000</span></li>
+                        <li><span>App Interface</span><span data-price="18000">₹18,000</span></li>
+                        <li><span>Icon Set</span><span data-price="2000">₹2,000</span></li>
+                        <li><span>Prototypes</span><span data-price="5000">₹5,000</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--gray-light);">
+        <div class="container" style="text-align: center;">
+            <h2 class="fade-in" style="margin-bottom: 48px;">Need Something Custom?</h2>
+            <p class="fade-in" style="max-width: 500px; margin: 0 auto 80px; font-weight: 300;">Tell us about your project and we'll create a tailored solution for you.</p>
+            <a href="contact.html" class="hero-cta">Start a Project</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">THE BLANK</div>
+        <p class="footer-copy">&copy; <span class="year">2026</span> The Blank Studio. All rights reserved.</p>
+    </footer>
+
+    
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            document.querySelector('.hamburger').classList.toggle('active');
+            document.querySelector('.mobile-menu').classList.toggle('active');
+        }
+
+        // Dark Mode Toggle
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        }
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Update year
+        document.querySelectorAll('.year').forEach(function(el) {
+            el.textContent = new Date().getFullYear();
+        });
+
+        // Custom Cursor
+        const cursor = document.querySelector('.custom-cursor');
+        document.addEventListener('mousemove', function(e) {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Currency Toggle
+        const currencyBtns = document.querySelectorAll('.currency-toggle button');
+        const exchangeRate = 83;
+
+        function updatePrices() {
+            const currency = localStorage.getItem('currency') || 'inr';
+            document.querySelectorAll('[data-price]').forEach(el => {
+                const inr = parseInt(el.dataset.price);
+                if (currency === 'usd') {
+                    el.textContent = '$' + Math.round(inr / exchangeRate);
+                } else {
+                    el.textContent = '₹' + inr.toLocaleString();
+                }
+            });
+        }
+
+        currencyBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                currencyBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                localStorage.setItem('currency', btn.dataset.currency);
+                updatePrices();
+            });
+        });
+
+        const savedCurrency = localStorage.getItem('currency') || 'inr';
+        currencyBtns.forEach(btn => {
+            if (btn.dataset.currency === savedCurrency) btn.classList.add('active');
+            else btn.classList.remove('active');
+        });
+        updatePrices();
+
+        // Fade In Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
